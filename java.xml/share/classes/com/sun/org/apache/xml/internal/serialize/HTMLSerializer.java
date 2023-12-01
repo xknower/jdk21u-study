@@ -1,39 +1,3 @@
-/*
- * Copyright (c) 2015, 2017, Oracle and/or its affiliates. All rights reserved.
- */
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-
-// Sep 14, 2000:
-//  Fixed serializer to report IO exception directly, instead at
-//  the end of document processing.
-//  Reported by Patrick Higgins <phiggins@transzap.com>
-// Aug 21, 2000:
-//  Fixed bug in startDocument not calling prepare.
-//  Reported by Mikael Staldal <d96-mst-ingen-reklam@d.kth.se>
-// Aug 21, 2000:
-//  Added ability to omit DOCTYPE declaration.
-// Sep 1, 2000:
-//   If no output format is provided the serializer now defaults
-//   to ISO-8859-1 encoding. Reported by Mikael Staldal
-//   <d96-mst@d.kth.se>
-
-
 package com.sun.org.apache.xml.internal.serialize;
 
 import com.sun.org.apache.xerces.internal.dom.DOMMessageFormatter;
