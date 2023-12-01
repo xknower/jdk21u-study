@@ -1,25 +1,3 @@
-/*
- * The Toolkit class has two functions: it instantiates the AWT
- * ToolkitPeer's native methods, and provides the DLL's core functions.
- *
- * There are two ways this DLL can be used: either as a dynamically-
- * loaded Java native library from the interpreter, or by a Windows-
- * specific app.  The first manner requires that the Toolkit provide
- * all support needed so the app can function as a first-class Windows
- * app, while the second assumes that the app will provide that
- * functionality.  Which mode this DLL functions in is determined by
- * which initialization paradigm is used. If the Toolkit is constructed
- * normally, then the Toolkit will have its own pump. If it is explicitly
- * initialized for an embedded environment (via a static method on
- * sun.awt.windows.WToolkit), then it will rely on an external message
- * pump.
- *
- * The most basic functionality needed is a Windows message pump (also
- * known as a message loop).  When an Java app is started as a console
- * app by the interpreter, the Toolkit needs to provide that message
- * pump if the AWT is dynamically loaded.
- */
-
 #ifndef AWT_TOOLKIT_H
 #define AWT_TOOLKIT_H
 
