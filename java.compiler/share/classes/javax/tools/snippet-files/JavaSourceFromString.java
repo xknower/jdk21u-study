@@ -1,3 +1,5 @@
+// @replace region replacement=""
+
 import javax.tools.SimpleJavaFileObject;
 import java.net.URI;
 
